@@ -21,3 +21,19 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+// Test Firebase
+firebase.firestore().collection("test").add({
+    message: "Firebase is connected!",
+})
+.then(() => {
+    console.log("Test document added!");
+})
+.catch((error) => {
+    console.error("Error adding document:", error);
+});
+
