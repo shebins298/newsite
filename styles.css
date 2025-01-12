@@ -1,106 +1,90 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1561.61">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
-</head>
-<body>
-<p class="p1">* {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>box-sizing: border-box;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">body {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-family: Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background-color: #f4f4f4;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color: #333;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">header {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background-color: #4CAF50;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 10px 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">header nav ul {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>list-style-type: none;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">header nav ul li {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin: 0 15px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">header nav ul li a {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size: 18px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.hero {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 50px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background-color: #333;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color: white;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.about {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background-color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">footer {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background-color: #333;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>position: fixed;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>bottom: 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">/* Mobile Styles */</p>
-<p class="p1">@media screen and (max-width: 768px) {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>header nav ul li {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>margin-bottom: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>padding: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.about {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>padding: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">/* Smaller Screens (Mobile First) */</p>
-<p class="p1">@media screen and (max-width: 480px) {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>header nav ul li a {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>font-size: 16px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero h1 {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>font-size: 24px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.about p {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>font-size: 14px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>footer {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>padding: 5px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1">}</p>
-</body>
-</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #333;
+    color: white;
+}
+
+.about {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        padding: 30px;
+    }
+
+    .about {
+        padding: 15px;
+    }
+}
+
+/* Smaller Screens (Mobile First) */
+@media screen and (max-width: 480px) {
+    header nav ul li a {
+        font-size: 16px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+}
